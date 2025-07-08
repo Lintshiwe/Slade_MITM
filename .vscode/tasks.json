@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run MITM Proxy",
+            "type": "shell",
+            "command": "c:/Users/ntoam/Desktop/MIT/.venv/Scripts/python.exe -m mitmproxy -s mitm_script.py",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
