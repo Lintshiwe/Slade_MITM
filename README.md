@@ -1,37 +1,88 @@
-# MITM Proxy (Educational)
 
-This project is a simple Man-in-the-Middle (MITM) proxy using Python and the mitmproxy library. It can intercept and log HTTP/HTTPS traffic for educational purposes only.
+### 📘 `README.md`
+```markdown
+# 🛡️ Slade_MITM: Educational MITM Proxy
 
-## Requirements
+This project is a basic Man-in-the-Middle (MITM) proxy built using **Python** and **mitmproxy**. It is intended **strictly for educational purposes** such as ethical hacking labs, cybersecurity learning, and traffic inspection in controlled environments.
 
+---
+
+## 🚀 Getting Started
+
+### 🔧 Requirements
 - Python 3.7+
-- mitmproxy (already installed)
+- mitmproxy (install with `pip install mitmproxy`)
 
-## Usage
+### 🌀 How to Run
 
-1. Run the proxy (terminal):
+**Run in terminal:**
+```bash
+mitmproxy -s mitm_script.py --listen-port 8888
+```
 
-   ```powershell
-   c:/Users/ntoam/Desktop/MIT/.venv/Scripts/mitmproxy.exe -s mitm_script.py --listen-port 8888
-   ```
+**Or launch GUI:**
+```bash
+python mitm_gui.py
+```
 
-   Or launch the GUI:
+- Configure your browser or device to use `localhost:8080` as an HTTP/HTTPS proxy.
+- Visit any website to see logged requests and responses.
+- Stop the proxy with `Ctrl+C`.
 
-   ```powershell
-   c:/Users/ntoam/Desktop/MIT/.venv/Scripts/python.exe mitm_gui.py
-   ```
+### ⚙️ HTTPS Note
+You may need to install mitmproxy’s CA certificate for HTTPS interception. The tool provides guidance when needed.
 
-2. Configure your browser or device to use `localhost:8080` as the HTTP/HTTPS proxy.
+---
 
-3. Visit any website. Requests and responses will be logged.
+## ⚠️ Disclaimer
 
-4. To stop the proxy, press `Ctrl+C` in the terminal.
+This tool is intended **only** for environments where you have explicit permission to intercept traffic.  
+Misuse, including unauthorized network access or data interception, is unethical and potentially **illegal**.
 
-## Notes
+---
 
-- For HTTPS interception, you may need to install mitmproxy's CA certificate in your browser. mitmproxy will provide instructions when you visit an HTTPS site.
-- Use this tool only in environments where you have permission to intercept traffic.
+## 📜 Ethical Use Policy
 
-## Educational Purpose Only
+✅ You **may**:
+- Use in cybersecurity labs, classrooms, or your own network.
+- Customize it for personal learning or research with proper context.
 
-This tool is for learning and testing. Do not use it for unauthorized interception.
+❌ You **must not**:
+- Use on public or corporate networks.
+- Intercept traffic without informed consent from all parties.
+- Deploy in environments that violate digital privacy or local laws.
+
+---
+
+## 🧭 License
+
+```text
+Educational Use License
+
+This software is provided for educational and ethical testing purposes only.
+Unauthorized use for malicious interception or exploitation is strictly prohibited.
+By using this code, you agree to abide by applicable laws and ethical standards.
+
+© 2025 Lintshiwe. All rights reserved.
+```
+
+---
+
+## 🤝 Code of Conduct
+
+All contributors and users are expected to:
+- Respect digital privacy and ethical hacking guidelines.
+- Not promote, suggest, or engage in malicious activities.
+- Collaborate responsibly with respect for this project's learning intent.
+
+---
+
+## 🔍 Project Status
+
+Currently in its early development phase. No forks, stars, or contributions yet — feel free to reach out with educational ideas or improvements!
+
+```
+
+---
+
+Let me know if you want this broken out into multiple files (e.g. `LICENSE.txt`, `CODE_OF_CONDUCT.md`), or committed automatically. Also — do you want to add example logs or expand the GUI features next? I’ve got ideas if you’re game 🔧💡
